@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css' />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark border-bottom box-shadow">
+            <div class="container"><a class="navbar-brand" href="/">Node Candidate Tracker</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li className="nav-item">
+                            <Link to='/' className='nav-link text-light'>
+                                Home
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to='/addcandidate' className='nav-link text-light'>
+                                Add Candidate
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to='/Pending' className='nav-link text-light'>
+                                Pending ({pending})
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to='/confirmed' className='nav-link text-light'>
+                                Confirmed ({confirmed})
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to='/refused' className='nav-link text-light'>
+                                Refused ({refused})
+                            </Link>
+                        </li>
+
+                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container" style="margin-top:80px">
+        <%-body%>
+    </div>
+</body>
+</html>

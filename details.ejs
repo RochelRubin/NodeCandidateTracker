@@ -1,0 +1,23 @@
+
+  
+<div className="row">
+    <div className="col-md-6 offset-md-3">
+        <div className="card card-body bg-light">
+            <form method='post' action='/people/update'></form>
+            <h4>Name: '<%= candidate.FirstName  candidate.LastName%>' </h4>
+            <h4>Email: '<%= candidate.Email %>' </h4>
+            <h4>Phone: '<%= candidate.Phone %>' </h4>
+            <h4>Status: '<%= candidate.registrationStatus %>'</h4>
+            <h4>Notes:</h4>
+            <p>'<%= candidate.Notes%>'</p>
+            <input type='hidden' name='id' value='<%= candidate.Id %>' />
+            {registrationStatus === 'Pending' && <div>
+                <% if (){
+                    <button  class="btn btn-primary">Confirm</button>
+                }%>
+                
+                <button  class="btn btn-danger">Refuse</button>
+            </div>}
+        </form>
+        </div>
+    </div>

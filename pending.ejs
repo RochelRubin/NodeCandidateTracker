@@ -1,0 +1,28 @@
+<div class="row">
+    <h1>Pending</h1>
+   
+    <table class='table table-hover table-striped table-bordered'>
+        <tr>
+            <th></th>
+         
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+        </tr>
+        <% for(let i=0; i < candidate.length; i++) { %>
+            <tr>
+                <td>
+                    <a href='/candidates/edit?id=<%= candidate[i].Id %>' class='btn btn-warning'>View Details</a>
+                </td>
+                <td><%= candidate[i].FirstName %></td>
+                <td><%= candidate[i].LastName %></td>
+                <td><%= candidate[i].Phone %></td>
+                <td><%= candidate[i].Email %></td>
+               
+            </tr>
+        <%}%>
+
+    </table>
+
+</div>
